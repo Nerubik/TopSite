@@ -1,0 +1,76 @@
+.container
+	margin: auto
+	margin-left: 50px
+	margin-right: 50px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 15px 0
+.header
+	border-bottom: 1px solid black
+	&-buttons
+		display: flex
+		width: 370px
+		justify-content: space-between
+		align-items: center
+	&-switch
+		width: 134px
+		display: flex
+		justify-content: space-between
+		align-items: center
+.switch
+	position: relative
+	display: inline-block
+	width: 75px
+	height: 40px
+.button
+	background-color: inherit
+	border: 1px solid black
+	border-radius: 56px
+	padding: 12px 32px 8px 32px
+	font-size: 20px
+	text-transform: uppercase
+	font-family: Thunder
+	text-align: center
+	cursor: pointer
+
+.switch input
+	display: none
+
+.slider
+	position: absolute
+	cursor: pointer
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	border: solid 1px black
+	background-color: inherit
+	transition: .4s
+
+.slider:before
+	position: absolute
+	content: ""
+	height: 32px
+	width: 32px
+	left: 2px
+	top: 2px
+	bottom: 2px
+	background-color: white
+	transition: .4s
+
+input:checked + .slider
+	border: solid 1px white
+input:checked + .round:before
+	border: solid 1px white
+
+input:checked + .slider:before
+	transform: translateX(35px)
+
+.slider.round
+	border-radius: 34px
+
+.slider.round:before
+	border-radius: 50%
+	border: solid 1px black
+	background-color: #C4C4C4

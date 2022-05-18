@@ -1,0 +1,76 @@
+.main
+	&-container
+		margin: auto
+		margin-left: 50px
+		margin-right: 50px
+		padding-top: 80px
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+.name
+	margin: 0
+	font-family: Thunder-Bold
+	font-weight: bold
+	font-size: 128px
+	text-transform: uppercase
+.description
+	font-family: Thunder-Thin
+	font-size: 48px
+	text-transform: uppercase
+
+.sections
+	list-style-type: none
+	margin: 0
+	margin-top: 65px
+	padding: 0
+	position: absolute
+	left: 0
+
+.section
+	border-top: 1px solid #000
+	&-name
+		padding-left: 50px
+		margin: 0
+		font-family: Thunder-Bold
+		font-size: 96px
+		text-transform: uppercase
+	&-about
+		z-index: 1
+		background-color: red
+		margin-bottom: -60px
+	&-skills
+		z-index: 2
+		background-color: #fff
+		margin-bottom: -60px
+	&-examples
+		z-index: 3
+		margin-bottom: -60px
+	&-why
+		z-index: 4
+		margin-bottom: -60px
+
+.right-side
+	padding-top: 10px
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+	width: 375px
+.feature
+	margin-bottom: 48px
+	&-type
+		margin-right: 120px
+	&-occupation
+		margin-right: 62px
+	&-name
+		margin-bottom: 14px
+		font-family: Thunder
+		font-size: 48px
+		text-transform: uppercase
+	&-list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		&--item
+			font-family: Gilroy
+			font-size: 18px
+			margin-bottom: 13px
