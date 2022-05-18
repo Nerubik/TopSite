@@ -3,6 +3,13 @@
           box-sizing: border-box;
 }
 
+html {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -418,10 +425,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 370px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -438,6 +441,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 20px;
 }
 
 .switch {
@@ -457,6 +461,7 @@ template {
   font-family: Thunder;
   text-align: center;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .switch input {
@@ -512,6 +517,10 @@ input:checked + .slider:before {
   background-color: #C4C4C4;
 }
 
+.main {
+  z-index: 0;
+}
+
 .main-container {
   margin: auto;
   margin-left: 50px;
@@ -543,16 +552,26 @@ input:checked + .slider:before {
 }
 
 .sections {
-  list-style-type: none;
-  margin: 0;
-  margin-top: 65px;
-  padding: 0;
   position: absolute;
   left: 0;
+  margin-top: 125px;
 }
 
 .section {
   border-top: 1px solid #000;
+  background-color: #fff;
+  -webkit-transform: translateZ(0) !important;
+          transform: translateZ(0) !important;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  margin-top: -60px;
+}
+
+.section:hover {
+  color: white;
+  margin-top: -90px;
+  margin-bottom: 30px;
+  background-color: #F62D00;
 }
 
 .section-name {
@@ -561,28 +580,6 @@ input:checked + .slider:before {
   font-family: Thunder-Bold;
   font-size: 96px;
   text-transform: uppercase;
-}
-
-.section-about {
-  z-index: 1;
-  background-color: red;
-  margin-bottom: -60px;
-}
-
-.section-skills {
-  z-index: 2;
-  background-color: #fff;
-  margin-bottom: -60px;
-}
-
-.section-examples {
-  z-index: 3;
-  margin-bottom: -60px;
-}
-
-.section-why {
-  z-index: 4;
-  margin-bottom: -60px;
 }
 
 .right-side {
@@ -630,7 +627,16 @@ input:checked + .slider:before {
 }
 
 .after-main {
-  z-index: 9;
-  border-top: solid 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-top: 1px solid #000;
+  padding: 16px 50px;
+  background-color: white;
+  -webkit-transform: translateZ(0) !important;
+          transform: translateZ(0) !important;
 }
 /*# sourceMappingURL=style.css.map */
