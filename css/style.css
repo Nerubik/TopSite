@@ -8,6 +8,7 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  color: black;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -462,6 +463,13 @@ template {
   text-align: center;
   cursor: pointer;
   margin-left: 20px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.button:hover {
+  background-color: #F62D00;
+  color: white;
 }
 
 .switch input {
@@ -500,6 +508,7 @@ input:checked + .slider {
 
 input:checked + .round:before {
   border: solid 1px white;
+  background-color: #F62D00;
 }
 
 input:checked + .slider:before {
@@ -565,6 +574,7 @@ input:checked + .slider:before {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   margin-top: -60px;
+  padding-right: 50px;
 }
 
 .section:hover {
@@ -596,7 +606,7 @@ input:checked + .slider:before {
 }
 
 .feature {
-  margin-bottom: 48px;
+  margin-bottom: 38px;
 }
 
 .feature-type {
@@ -608,7 +618,6 @@ input:checked + .slider:before {
 }
 
 .feature-name {
-  margin-bottom: 14px;
   font-family: Thunder;
   font-size: 48px;
   text-transform: uppercase;
@@ -617,6 +626,7 @@ input:checked + .slider:before {
 .feature-list {
   list-style-type: none;
   margin: 0;
+  margin-top: 10px;
   padding: 0;
 }
 
@@ -638,5 +648,137 @@ input:checked + .slider:before {
   background-color: white;
   -webkit-transform: translateZ(0) !important;
           transform: translateZ(0) !important;
+}
+
+.name-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 510px;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.description-skills {
+  font-family: Gilroy;
+  position: absolute;
+  font-size: 20px;
+  top: 35px;
+  right: 0;
+}
+
+.skill-img {
+  position: absolute;
+  top: 110px;
+  right: 60px;
+}
+
+.skill-main {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 510px;
+  margin-bottom: 50px;
+}
+
+.skill-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 220px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill-progress {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  bottom: -1px;
+  right: -1px;
+  border: 1px solid black;
+  border-radius: 56px;
+  background-color: #F62D00;
+}
+
+.skill-progress--less {
+  right: 10px;
+}
+
+.skill-progress--react {
+  right: 20px;
+}
+
+.skill-progress--jquery {
+  right: 10px;
+}
+
+.skill-progress--unity {
+  right: 15px;
+}
+
+.skill-progress--docker {
+  right: 25px;
+}
+
+.skill-progress--wrapper {
+  position: relative;
+  width: 91px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 56px;
+}
+
+.section-skills {
+  position: absolute;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  margin-top: 500px;
+}
+
+.menu-item {
+  border-top: 1px solid #000;
+  background-color: #fff;
+  -webkit-transform: translateZ(0) !important;
+          transform: translateZ(0) !important;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  margin-top: -60px;
+  padding-right: 170px;
+}
+
+.menu-item:hover {
+  color: white;
+  margin-top: -90px;
+  margin-bottom: 30px;
+  background-color: #F62D00;
+}
+
+.menu-item--name {
+  padding-left: 20px;
+  margin: 0;
+  font-family: Thunder-Bold;
+  font-size: 96px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
