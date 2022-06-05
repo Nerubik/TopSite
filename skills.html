@@ -15,9 +15,15 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<img src="img/logo.svg"
-				alt="Logo"
-				class="logo">
+			<div class="logo-wrapper">
+				<img src="img/logo.svg"
+					alt="Logo"
+					class="logo">
+				<a href="index.html"
+					class="back-link"><img src="img/turnback.svg"
+						alt="Turn back"
+						class="back"></a>
+			</div>
 			<div class="header-buttons">
 				<button class="header-button button">Play</button>
 				<button class="header-button button">About</button>
@@ -128,10 +134,12 @@
 					class="skill-img">
 				<div class="menu">
 					<div class="menu-item">
-						<h2 class="menu-item--name">main page</h2>
+						<h2 class="menu-item--name"><a href="index.html"
+								class="link">main page</a></h2>
 					</div>
 					<div class="menu-item">
-						<h2 class="menu-item--name">about me</h2>
+						<h2 class="menu-item--name"><a href="about.html"
+								class="link">About me</a></h2>
 					</div>
 					<div class="menu-item">
 						<h2 class="menu-item--name">examples of skills</h2>
@@ -139,12 +147,14 @@
 					<div class="menu-item">
 						<h2 class="menu-item--name">why i am the best</h2>
 					</div>
+					<div class="menu-item menu-bottom">
+					</div>
 				</div>
 				<!-- /.menu -->
 			</div>
 			<!-- /.right-side -->
 		</div>
-		<div class="after-main">
+		<div class="after-main after-skills">
 			<div class="buttons">
 				<button class="button">#Frontend</button>
 				<button class="button button-aftermain">#portfolio</button>

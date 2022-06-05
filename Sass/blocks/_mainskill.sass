@@ -59,14 +59,17 @@
 	position: absolute
 	right: 0
 	margin-top: 500px
+	&-bottom
+		height: 100px
 	&-item
+		padding-top: 7px
 		border-top: 1px solid #000
 		background-color: #fff
 		transform: translateZ(0) !important
 		transition-duration: 0.5s
 		margin-top: -60px
 		padding-right: 170px
-		&:hover
+		&:not(:last-child):hover
 			color: white
 			margin-top: -90px
 			margin-bottom: 30px
@@ -77,3 +80,5 @@
 			font-family: Thunder-Bold
 			font-size: 96px
 			text-transform: uppercase
+.after-skills
+	margin-top: 70px

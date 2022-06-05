@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="css/style.css">
+	<title>Soldatov Front-End</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="logo-wrapper">
+				<img src="img/logo.svg"
+					alt="Logo"
+					class="logo">
+				<a href="index.html"
+					class="back-link"><img src="img/turnback.svg"
+						alt="Turn back"
+						class="back"></a>
+			</div>
+			<div class="header-buttons">
+				<button class="header-button button">Play</button>
+				<button class="header-button button">About</button>
+				<div class="header-switch">
+					<img src="img/sun.svg"
+						alt="Light-theme"
+						class="theme-light">
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+					<img src="img/moon.svg"
+						alt="Dark-theme"
+						class="theme-light">
+				</div>
+				<!-- /.header-switch -->
+			</div>
+			<!-- /.header-buttons -->
+		</div>
+		<!-- /.container -->
+	</header>
+	<section class="main">
+		<div class="main-container">
+			<div class="left-side">
+
+				<h1 class="name">about me</h1>
+				<span class="description-about">Hi, I'm Artem. I am 22 years old and I am</br>developing as a frontend
+					developer.</br>I
+					am currently graduating from</br>a technical university with a degree</br>in Applied Informatics and I
+					want</br>to develop
+					in the field of frontend.</span>
+				<div class="photo-wrapper">
+					<span class="photo-text">Do you want to see my</br>photo?</span>
+					<div class="photo-choose">
+						<span class="photo-yn photo-yn__border">Yes</span>
+						<span class="photo-yn">No</span>
+					</div>
+				</div>
+
+			</div>
+			<!-- /.left-side -->
+			<div class="right-side">
+				<img src="img/about-img.png"
+					alt="man with tool"
+					class="about-img">
+				<span class="about about-front">frontend</span>
+				<span class="about about-dev">developer</span>
+				<div class="about-text--wrapper">
+					<span class="about-text">Education: MIREA - RTU</span>
+					<span class="about-text">Skills: click here</span>
+					<span class="about-text">Work experience:</span>
+					<span class="about-text">2019 - present tutor at an online</br>programming school (Web -</br>development,
+						Unity, JavaScript,</br>Lua, Blender)</span>
+					<span class="about-text">2019 - present: freelance site layout</span>
+				</div>
+				<div class="menu">
+					<div class="menu-item">
+						<h2 class="menu-item--name"><a href="index.html"
+								class="link">main page</a></h2>
+					</div>
+					<div class="menu-item">
+						<h2 class="menu-item--name"><a href="skills.html"
+								class="link">skills</a></h2>
+					</div>
+					<div class="menu-item">
+						<h2 class="menu-item--name">examples of skills</h2>
+					</div>
+					<div class="menu-item">
+						<h2 class="menu-item--name">why i am the best</h2>
+					</div>
+					<div class="menu-item menu-bottom">
+					</div>
+				</div>
+				<!-- /.menu -->
+			</div>
+			<!-- /.right-side -->
+		</div>
+		<div class="after-main after-about">
+			<button class="button-about">console.log("Hello world!");</button>
+			<div class="buttons">
+				<button class="button">#Frontend</button>
+				<button class="button">#portfolio</button>
+			</div>
+		</div>
+		<!-- /.after-main -->
+	</section>
+	<!-- /.main -->
+
+	<script src="https://unpkg.com/react@17/umd/react.development.js"
+		crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+		crossorigin></script>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
