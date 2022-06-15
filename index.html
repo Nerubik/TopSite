@@ -6,13 +6,20 @@
 	<meta http-equiv="X-UA-Compatible"
 		content="IE=edge">
 	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0">
+		content="width=device-width, initial-scale=1.00">
 	<link rel="stylesheet"
 		href="css/style.css">
 	<title>Soldatov Front-End</title>
 </head>
 
 <body>
+
+	<script type="text/javascript">
+		function tema() {
+			document.body.classList.toggle('dark-mode');
+		}
+	</script>
+
 	<header class="header">
 		<div class="container">
 			<img src="img/logo.svg"
@@ -25,13 +32,20 @@
 					<img src="img/sun.svg"
 						alt="Light-theme"
 						class="theme-light">
+					<img src="img/sunL.svg"
+						alt="Light-theme"
+						class="theme-dark">
 					<label class="switch">
-						<input type="checkbox">
+						<input type="checkbox"
+							onclick="tema()">
 						<span class="slider round"></span>
 					</label>
 					<img src="img/moon.svg"
 						alt="Dark-theme"
 						class="theme-light">
+					<img src="img/moonL.svg"
+						alt="Dark-theme"
+						class="theme-dark">
 				</div>
 				<!-- /.header-switch -->
 			</div>
@@ -48,16 +62,28 @@
 					<div class="section section-about">
 						<h2 class="section-name"><a href="about.html"
 								class="link">About me</a></h2>
+						<img src="img/about.svg"
+							alt="about"
+							class="section-img">
 					</div>
 					<div class="section">
 						<h2 class="section-name"><a href="skills.html"
 								class="link">skills</a></h2>
+						<img src="img/skills.svg"
+							alt="skills"
+							class="section-img">
 					</div>
 					<div class="section section-examples">
 						<h2 class="section-name">examples of skills</h2>
+						<img src="img/exmp.svg"
+							alt="exmp"
+							class="section-img">
 					</div>
 					<div class="section section-why">
 						<h2 class="section-name">why i am the best</h2>
+						<img src="img/best.svg"
+							alt="best"
+							class="section-img">
 					</div>
 				</div>
 			</div>

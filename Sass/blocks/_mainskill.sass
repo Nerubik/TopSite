@@ -69,6 +69,8 @@
 		transition-duration: 0.5s
 		margin-top: -60px
 		padding-right: 170px
+		display: flex
+		justify-content: space-between
 		&:not(:last-child):hover
 			color: white
 			margin-top: -90px
@@ -80,5 +82,13 @@
 			font-family: Thunder-Bold
 			font-size: 96px
 			text-transform: uppercase
+		&--img
+			margin-top: -60px
+			margin-right: -150px
+			opacity: 0
+			pointer-events: none
+			transition-duration: 0.5s
+.menu-item:hover .menu-item--img
+	opacity: 1
 .after-skills
 	margin-top: 70px

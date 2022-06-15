@@ -11,6 +11,13 @@ html {
   color: black;
 }
 
+html .dark-mode {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: white;
+  background-color: #121212;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -445,6 +452,10 @@ template {
   margin-left: 20px;
 }
 
+.dark-mode .header {
+  border-bottom: 1px solid white;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -470,6 +481,11 @@ template {
 .button:hover {
   background-color: #F62D00;
   color: white;
+}
+
+.dark-mode .button {
+  color: white;
+  border: 1px solid white;
 }
 
 .switch input {
@@ -526,6 +542,18 @@ input:checked + .slider:before {
   background-color: #C4C4C4;
 }
 
+.dark-mode .theme-light {
+  display: none;
+}
+
+.theme-dark {
+  display: none;
+}
+
+.dark-mode .theme-dark {
+  display: inline;
+}
+
 .main {
   z-index: 0;
 }
@@ -575,6 +603,12 @@ input:checked + .slider:before {
           transition-duration: 0.5s;
   margin-top: -60px;
   padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section:hover {
@@ -590,6 +624,30 @@ input:checked + .slider:before {
   font-family: Thunder-Bold;
   font-size: 96px;
   text-transform: uppercase;
+}
+
+.section-img {
+  margin-top: -70px;
+  margin-right: -70px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.section:hover .section-img {
+  opacity: 1;
+}
+
+.dark-mode .section {
+  background-color: #121212;
+  border-top: 1px solid white;
+}
+
+.dark-mode .section:hover {
+  margin-top: -90px;
+  margin-bottom: 30px;
+  background-color: #F62D00;
 }
 
 .right-side {
@@ -648,6 +706,13 @@ input:checked + .slider:before {
   background-color: white;
   -webkit-transform: translateZ(0) !important;
           transform: translateZ(0) !important;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.dark-mode .after-main {
+  border-top: 1px solid white;
+  background-color: #121212;
 }
 
 .link {
@@ -775,6 +840,12 @@ input:checked + .slider:before {
           transition-duration: 0.5s;
   margin-top: -60px;
   padding-right: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-item:not(:last-child):hover {
@@ -790,6 +861,19 @@ input:checked + .slider:before {
   font-family: Thunder-Bold;
   font-size: 96px;
   text-transform: uppercase;
+}
+
+.menu-item--img {
+  margin-top: -60px;
+  margin-right: -150px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.menu-item:hover .menu-item--img {
+  opacity: 1;
 }
 
 .after-skills {
